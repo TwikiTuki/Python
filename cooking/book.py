@@ -17,10 +17,10 @@ class Book():
 			recipes_list = Book.empty_recipes_list() 
 		for k in recipes_list.keys():
 			if k not in ks:
-				raise AssertionError("Recpes list must contatin three keys: 'starter', 'lunch', dessert' ")
+				raise AssertionError("Recipes list must contain three keys: 'starter', 'lunch', dessert' ")
 		for k in ks:
 			if k not in recipes_list.keys():
-				raise AssertionError("Recpes list must contatin three keys: 'starter', 'lunch', dessert' ")
+				raise AssertionError("Recipes list must contain three keys: 'starter', 'lunch', dessert' ")
 		self.name = name
 		#self.last_update = datetime.date.today()
 		#self.creation_date = datetime.date.today()

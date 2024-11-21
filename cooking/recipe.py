@@ -31,7 +31,7 @@ class Recipe():
 
     def __str__(self):
         result=f'{self.name}: lv.{self.cooking_level} {self.cooking_time}min. ({self.recipe_type}) '
-        result+="\ningregdients: " + " ".join(self.ingredients)
+        result+="\ningredients: " + " ".join(self.ingredients)
         result+="\npreparation: \n" + self.preparation
         return (result)
     def __repr__(self):
